@@ -54,6 +54,8 @@ To link your local environment to the cloud pipeline and unlock allowance tiers:
 2. The **Dashboard** will load
    <img width="1915" height="915" alt="Dashboard" src="https://github.com/user-attachments/assets/c4c5418c-5592-4b9e-975b-0feb90ddd718" />
 3. **Parkings & Gates:** Go to the **Parkings** tab to add new parking site details and define entry/exit gates per parking lot.
+   <img width="1917" height="427" alt="Add Parking" src="https://github.com/user-attachments/assets/b5c319d1-2cd2-4d9d-bf4f-2ebc409ea0dc" />
+
 4. **Tenants:** Go to the **Tenants** tab to register tenant profiles (vehicle owners).
 5. **Vehicles:** Go to the **Vehicles** tab to map license plate numbers to tenants and set permitted parkings.
 6. Navigate to the **Settings** tab on the web dashboard.
@@ -90,8 +92,14 @@ To link your local environment to the cloud pipeline and unlock allowance tiers:
 7. Click **Save** again to refresh and update the C++ detection routines.
    <img width="1277" height="845" alt="Gate Settings" src="https://github.com/user-attachments/assets/87215f46-0502-43ea-ba2a-794e01cefd3e" />
 
+**Live Scans** are reflected on the dashboard. You can go to the **Parking Log** tab to see the permitted (*success*) and failed scans (*non-permitted vehicle, cloud failure*)
+You can click on the **image icon** on each log item to view the image(plate) of that scan.
+<img width="1912" height="640" alt="Parking Log" src="https://github.com/user-attachments/assets/25805939-c197-4db1-83f2-af92ce8dd8e1" />
+<img width="1910" height="915" alt="Scan Image" src="https://github.com/user-attachments/assets/e9794428-2409-4e2a-bb4b-ae941ee6d4d8" />
+
+
 > 💡 **Performance Tip:** Close the main Python GUI once configured. C++ background processes will handle low-level detection with minimal CPU overhead.
-> Try not to Preview multiple feeds at once. This may slow down your device due to video decoding.
+> Try not to preview multiple feeds at once. This may slow down your device due to video decoding.
 
 ---
 
