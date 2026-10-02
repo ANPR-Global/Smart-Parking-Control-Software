@@ -36,6 +36,10 @@ Compile the C++ core files using your platform's toolchain (e.g., GCC, MSVC, or 
 python Local_APP_qt.py
 
 ```
+<img width="2872" height="1672" alt="Python" src="https://github.com/user-attachments/assets/7b182194-16cd-4c71-ba4c-d71333aafb50" />
+
+<img width="1780" height="1162" alt="Local C++ Controller" src="https://github.com/user-attachments/assets/66c7f4a8-73c6-4ec9-bea4-afa00b81acb5" />
+
 
 
 *The compiled `.exe` background workers will start automatically alongside the Qt application.*
@@ -60,7 +64,8 @@ To link your local environment to the cloud pipeline and unlock allowance tiers:
    <img width="2615" height="1500" alt="Save keys" src="https://github.com/user-attachments/assets/a4031b3f-5127-4d87-a562-7fd255f9ea04" />
    
 9. **Sync Local App:** Now the Python app will pull saved cloud records.
-<img width="2870" height="1662" alt="Load Parkings" src="https://github.com/user-attachments/assets/3e580d64-65b9-4b17-94e0-ba0b45aa09be" />
+<img width="2577" height="552" alt="Activated" src="https://github.com/user-attachments/assets/434ce6ab-3abe-4a30-8175-448675f4506a" />
+
 
 ---
 
@@ -71,15 +76,17 @@ To link your local environment to the cloud pipeline and unlock allowance tiers:
 | **IP Cameras** | IP / RTSP streaming URLs |
 | **Barrier Gates** | IP / TCP trigger endpoints |
 
-1. Lock the parking you want to configure and run on that device (premise/location)
+1. Select and lock the parkings you want to configure and control on that device (premise/location)
    <img width="2617" height="1505" alt="Lock parkings" src="https://github.com/user-attachments/assets/e1dcc0b0-a227-4c45-8caa-64f338421124" />
-   
-2. Expand the Gate you want to configure
-3. Input the RTSP Camera Stream URL and Barrier Gate TCP URL into the gate settings.
-4. Click **Save** and then **Capture** to pull a live preview frame from the feed.
-5. Click **Draw ROI**: Draw a bounding box on the image canvas where vehicle plates pass through, and save.
+2. This will display the gates of the selected parkings.
+   <img width="2870" height="1662" alt="Load Parkings" src="https://github.com/user-attachments/assets/e7bfe090-19ae-49ea-bd28-6f04e337b38e" />
+
+3. Expand the Gate you want to configure
+4. Input the RTSP Camera Stream URL and Barrier Gate TCP URL into the gate settings.
+5. Click **Save** and then **Capture** to pull a live preview frame from the feed.
+6. Click **Draw ROI**: Draw a bounding box on the image canvas where vehicle plates pass through, and save.
    <img width="1115" height="410" alt="ROI" src="https://github.com/user-attachments/assets/7087775e-f087-4495-bebc-8cb5ca6e2aaa" />
-6. Click **Save** again to refresh and update the C++ detection routines.
+7. Click **Save** again to refresh and update the C++ detection routines.
    <img width="1277" height="845" alt="Gate Settings" src="https://github.com/user-attachments/assets/87215f46-0502-43ea-ba2a-794e01cefd3e" />
 
 > 💡 **Performance Tip:** Close the main Python GUI once configured. C++ background processes will handle low-level detection with minimal CPU overhead.
