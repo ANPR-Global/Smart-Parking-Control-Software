@@ -92,6 +92,9 @@ To link your local environment to the cloud pipeline and unlock allowance tiers:
 7. Click **Save** again to refresh and update the C++ detection routines.
    <img width="1277" height="845" alt="Gate Settings" src="https://github.com/user-attachments/assets/87215f46-0502-43ea-ba2a-794e01cefd3e" />
 
+> 💡 **Performance Tip:** Close the main Python GUI once configured. C++ background processes will handle low-level detection with minimal CPU overhead.
+> Try not to preview multiple feeds at once. This may slow down your device due to video decoding.
+
 ## Ream-time dashboard updates
 
 **Live Scans** are reflected on the dashboard. You can go to the **Parking Log** tab to see the permitted vehicles(*success and verified*) and failed scans (*non-permitted vehicle, cloud failure*)
@@ -105,13 +108,11 @@ You can click on the **image icon** on each log item to view the image(plate) of
 
 <img width="1915" height="520" alt="Web Controls" src="https://github.com/user-attachments/assets/55c9707d-e2a8-4f08-a0aa-aaeba0e75408" />
 
-**Local Alert** when a gate is opened
+---
+
+## **Local Alert** when a gate is opened
 
 <img width="560" height="370" alt="Gate open popup" src="https://github.com/user-attachments/assets/f89f408a-d41e-4407-80d4-3c83b2efd7a3" />
-
-
-> 💡 **Performance Tip:** Close the main Python GUI once configured. C++ background processes will handle low-level detection with minimal CPU overhead.
-> Try not to preview multiple feeds at once. This may slow down your device due to video decoding.
 
 ---
 
