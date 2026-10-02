@@ -106,6 +106,7 @@ You can click on the **image icon** on each log item to view the image(plate) of
 <img width="1915" height="520" alt="Web Controls" src="https://github.com/user-attachments/assets/55c9707d-e2a8-4f08-a0aa-aaeba0e75408" />
 
 **Local Alert** when a gate is opened
+
 <img width="560" height="370" alt="Gate open popup" src="https://github.com/user-attachments/assets/f89f408a-d41e-4407-80d4-3c83b2efd7a3" />
 
 
