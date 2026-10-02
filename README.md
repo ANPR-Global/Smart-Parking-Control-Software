@@ -17,21 +17,6 @@ A high-performance, hybrid Automatic Number Plate Recognition (ANPR) system comb
 
 ---
 
-## 💳 Pricing Tiers
-
-Every account includes **100 FREE scans** per month. Upgrade to paid tiers as your parking capacity grows:
-
-| Plan / Tier | Monthly Scans | Price (USD/mo) | Target Parking Size | Key Features |
-| --- | --- | --- | --- | --- |
-| **Free Tier** | 100 | $0.00 | Testing / Demo | Full dashboard & API access |
-| **7,500 Scans** | 7,500 | $8.17 | ~25 spaces | Full ANPR pipeline |
-| **15,000 Scans** ⭐ | 15,000 | $16.35 | ~50 spaces | Full ANPR pipeline (Popular) |
-| **22,500 Scans** | 22,500 | $24.52 | ~75 spaces | Full ANPR pipeline |
-| **30,000 Scans** | 30,000 | $32.70 | ~100 spaces | Full ANPR pipeline |
-| **Custom Volume** | > 30,000 | Custom | > 100 spaces | Volume discounts, custom limits, 1-hr support contact |
-
----
-
 ## 🚀 Quick Start Guide
 
 ### 1. Local Application Setup
@@ -55,37 +40,50 @@ python Local_APP_qt.py
 
 *The compiled `.exe` background workers will start automatically alongside the Qt application.*
 
-### 2. Cloud Activation
+### 2. Web Dashboard Configuration:
 
 To link your local environment to the cloud pipeline and unlock allowance tiers:
 
-1. Register at [wyom.in/parking](https://wyom.in/parking) and verify your email via OTP.
-2. Navigate to the **Settings** tab on the web dashboard.
-3. Generate your **API Key** and **Session Key**.
-4. Copy and paste both keys into the running Python application settings screen and click **Save**.
+1. Signup at [wyom.in/parking](https://wyom.in/parking) and verify your email via OTP.
+   <img width="1055" height="807" alt="Sign-up" src="https://github.com/user-attachments/assets/b732e629-ba2c-482a-9d8c-6981fb85c2e4" />
+   <img width="1052" height="805" alt="OTP" src="https://github.com/user-attachments/assets/af231e7f-7965-4a42-b2b5-078c198576f5" />
+2. The dashboard will load
+   <img width="1915" height="915" alt="Dashboard" src="https://github.com/user-attachments/assets/c4c5418c-5592-4b9e-975b-0feb90ddd718" />
+3. **Parkings & Gates:** Go to the **Parkings** tab to add new parking site details and define entry/exit gates per parking lot.
+4. **Tenants:** Go to the **Tenants** tab to register tenant profiles (vehicle owners).
+5. **Vehicles:** Go to the **Vehicles** tab to map license plate numbers to tenants and set permitted parkings.
+6. Navigate to the **Settings** tab on the web dashboard.
+7. Generate your **API Key** and **Session Key**.
+   <img width="590" height="290" alt="Gen API" src="https://github.com/user-attachments/assets/568af3ed-1f60-426e-b980-f3ad532d7f60" />
 
-### 3. Web Dashboard Configuration
+8. Copy and paste both keys into the running Python application settings screen and click **Save** for each.
+   <img width="2615" height="1500" alt="Save keys" src="https://github.com/user-attachments/assets/a4031b3f-5127-4d87-a562-7fd255f9ea04" />
+   
+9. **Sync Local App:** Now the Python app will pull saved cloud records.
+<img width="2870" height="1662" alt="Load Parkings" src="https://github.com/user-attachments/assets/3e580d64-65b9-4b17-94e0-ba0b45aa09be" />
 
-1. **Parkings & Gates:** Go to the **Parkings** tab to add new parking site details and define entry/exit gates per parking lot.
-2. **Tenants:** Go to the **Tenants** tab to register tenant profiles (vehicle owners).
-3. **Vehicles:** Go to the **Vehicles** tab to map license plate numbers to tenants and set permitted parkings.
-4. **Sync Local App:** Click **Save / Sync** inside the local Python App to pull cloud records.
+---
 
-### 4. Camera & Gate Hardware Setup (Python<img width="1915" height="915" alt="Dashboard" src="https://github.com/user-attachments/assets/0d751901-6304-4577-8902-9628f46aabb9" />
-)
+### 4. Camera & Gate Hardware Setup (Python)
 
 | Device Type | Supported Protocols |
 | --- | --- |
 | **IP Cameras** | IP / RTSP streaming URLs |
 | **Barrier Gates** | IP / TCP trigger endpoints |
 
-1. Input the RTSP Camera Stream URL and Barrier Gate TCP URL into the gate settings.
-2. Click **Save** and then **Capture** to pull a live preview frame from the feed.
-3. Click **Draw ROI**: Draw a bounding box on the image canvas where vehicle plates pass through.
-4. Click **Save**.
-5. Click **Save** again to refresh and update the C++ detection routines.
+1. Lock the parking you want to configure and run on that device (premise/location)
+   <img width="2617" height="1505" alt="Lock parkings" src="https://github.com/user-attachments/assets/e1dcc0b0-a227-4c45-8caa-64f338421124" />
+   
+2. Expand the Gate you want to configure
+3. Input the RTSP Camera Stream URL and Barrier Gate TCP URL into the gate settings.
+4. Click **Save** and then **Capture** to pull a live preview frame from the feed.
+5. Click **Draw ROI**: Draw a bounding box on the image canvas where vehicle plates pass through, and save.
+   <img width="1115" height="410" alt="ROI" src="https://github.com/user-attachments/assets/7087775e-f087-4495-bebc-8cb5ca6e2aaa" />
+6. Click **Save** again to refresh and update the C++ detection routines.
+   <img width="1277" height="845" alt="Gate Settings" src="https://github.com/user-attachments/assets/87215f46-0502-43ea-ba2a-794e01cefd3e" />
 
 > 💡 **Performance Tip:** Close the main Python GUI once configured. C++ background processes will handle low-level detection with minimal CPU overhead.
+> Try not to Preview multiple feeds at once. This may slow down your device due to video decoding.
 
 ---
 
@@ -95,6 +93,22 @@ To link your local environment to the cloud pipeline and unlock allowance tiers:
 * **Extended Storage:** Need longer retention (60, 90, 365, or 730 days) for compliance? Contact [info@wyom.in](https://www.google.com/search?q=mailto%3Ainfo%40wyom.in) from your verified account email.
 
 ---
+
+## 💳 Pricing Tiers
+
+Every account includes **100 FREE scans** per month. Upgrade to paid tiers as your parking capacity grows:
+
+| Plan / Tier | Monthly Scans | Price (USD/mo) | Target Parking Size | Key Features |
+| --- | --- | --- | --- | --- |
+| **Free Tier** | 100 | $0.00 | Testing / Demo | Full dashboard & API access |
+| **7,500 Scans** | 7,500 | $8.17 | ~25 spaces | Full ANPR pipeline |
+| **15,000 Scans** ⭐ | 15,000 | $16.35 | ~50 spaces | Full ANPR pipeline (Popular) |
+| **22,500 Scans** | 22,500 | $24.52 | ~75 spaces | Full ANPR pipeline |
+| **30,000 Scans** | 30,000 | $32.70 | ~100 spaces | Full ANPR pipeline |
+| **Custom Volume** | > 30,000 | Custom | > 100 spaces | Volume discounts, custom limits, 1-hr support contact |
+
+---
+
 
 ## 📩 Support & Roadmap
 
