@@ -57,10 +57,10 @@ To link your local environment to the cloud pipeline and unlock allowance tiers:
 4. **Tenants:** Go to the **Tenants** tab to register tenant profiles (vehicle owners).
 5. **Vehicles:** Go to the **Vehicles** tab to map license plate numbers to tenants and set permitted parkings.
 6. Navigate to the **Settings** tab on the web dashboard.
-7. Generate your **API Key** and **Session Key**.
+7. Generate your **API Key**.
 
    <img width="590" height="290" alt="Gen API" src="https://github.com/user-attachments/assets/568af3ed-1f60-426e-b980-f3ad532d7f60" />
-
+8. (**Session Key**) can be found in the developer console on your browser (Ctrl + Shift + I) > Application> Storage > Local Storage > wyom.in > Client Session Token -> copy the value
 9. Copy and paste both keys into the running Python application settings screen and click **Save** for each.
    <img width="2615" height="1500" alt="Save keys" src="https://github.com/user-attachments/assets/a4031b3f-5127-4d87-a562-7fd255f9ea04" />
    
