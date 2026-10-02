@@ -51,19 +51,20 @@ To link your local environment to the cloud pipeline and unlock allowance tiers:
 1. Signup at [wyom.in/parking](https://wyom.in/parking) and verify your email via OTP.
    <img width="1055" height="807" alt="Sign-up" src="https://github.com/user-attachments/assets/b732e629-ba2c-482a-9d8c-6981fb85c2e4" />
    <img width="1052" height="805" alt="OTP" src="https://github.com/user-attachments/assets/af231e7f-7965-4a42-b2b5-078c198576f5" />
-2. The dashboard will load
+2. The **Dashboard** will load
    <img width="1915" height="915" alt="Dashboard" src="https://github.com/user-attachments/assets/c4c5418c-5592-4b9e-975b-0feb90ddd718" />
 3. **Parkings & Gates:** Go to the **Parkings** tab to add new parking site details and define entry/exit gates per parking lot.
 4. **Tenants:** Go to the **Tenants** tab to register tenant profiles (vehicle owners).
 5. **Vehicles:** Go to the **Vehicles** tab to map license plate numbers to tenants and set permitted parkings.
 6. Navigate to the **Settings** tab on the web dashboard.
 7. Generate your **API Key** and **Session Key**.
-   <img width="590" height="290" alt="Gen API" src="https://github.com/user-attachments/assets/568af3ed-1f60-426e-b980-f3ad532d7f60" />
 
-8. Copy and paste both keys into the running Python application settings screen and click **Save** for each.
+<img width="590" height="290" alt="Gen API" src="https://github.com/user-attachments/assets/568af3ed-1f60-426e-b980-f3ad532d7f60" />
+
+9. Copy and paste both keys into the running Python application settings screen and click **Save** for each.
    <img width="2615" height="1500" alt="Save keys" src="https://github.com/user-attachments/assets/a4031b3f-5127-4d87-a562-7fd255f9ea04" />
    
-9. **Sync Local App:** Now the Python app will pull saved cloud records.
+10. **Sync Local App:** Now the Python app will pull saved cloud records.
 <img width="2577" height="552" alt="Activated" src="https://github.com/user-attachments/assets/434ce6ab-3abe-4a30-8175-448675f4506a" />
 
 
