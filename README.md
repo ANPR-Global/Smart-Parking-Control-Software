@@ -92,10 +92,21 @@ To link your local environment to the cloud pipeline and unlock allowance tiers:
 7. Click **Save** again to refresh and update the C++ detection routines.
    <img width="1277" height="845" alt="Gate Settings" src="https://github.com/user-attachments/assets/87215f46-0502-43ea-ba2a-794e01cefd3e" />
 
-**Live Scans** are reflected on the dashboard. You can go to the **Parking Log** tab to see the permitted (*success*) and failed scans (*non-permitted vehicle, cloud failure*)
+## Ream-time dashboard updates
+
+**Live Scans** are reflected on the dashboard. You can go to the **Parking Log** tab to see the permitted vehicles(*success and verified*) and failed scans (*non-permitted vehicle, cloud failure*)
+**Permitted vehicles open the gate at which they sent the scan.**  
 You can click on the **image icon** on each log item to view the image(plate) of that scan.
+
 <img width="1912" height="640" alt="Parking Log" src="https://github.com/user-attachments/assets/25805939-c197-4db1-83f2-af92ce8dd8e1" />
 <img width="1910" height="915" alt="Scan Image" src="https://github.com/user-attachments/assets/e9794428-2409-4e2a-bb4b-ae941ee6d4d8" />
+
+## Web Controls (Camera Gates tab)
+
+<img width="1915" height="520" alt="Web Controls" src="https://github.com/user-attachments/assets/55c9707d-e2a8-4f08-a0aa-aaeba0e75408" />
+
+**Local Alert** when a gate is opened
+<img width="560" height="370" alt="Gate open popup" src="https://github.com/user-attachments/assets/f89f408a-d41e-4407-80d4-3c83b2efd7a3" />
 
 
 > 💡 **Performance Tip:** Close the main Python GUI once configured. C++ background processes will handle low-level detection with minimal CPU overhead.
