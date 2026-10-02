@@ -36,7 +36,7 @@ Compile the C++ core files using your platform's toolchain (e.g., GCC, MSVC, or 
 python Local_APP_qt.py
 
 ```
-<img width="2872" height="1672" alt="Python" src="https://github.com/user-attachments/assets/7b182194-16cd-4c71-ba4c-d71333aafb50" />
+<img width="1672" height="872" alt="Python" src="https://github.com/user-attachments/assets/7b182194-16cd-4c71-ba4c-d71333aafb50" />
 
 <img width="1780" height="1162" alt="Local C++ Controller" src="https://github.com/user-attachments/assets/66c7f4a8-73c6-4ec9-bea4-afa00b81acb5" />
 
@@ -59,13 +59,13 @@ To link your local environment to the cloud pipeline and unlock allowance tiers:
 6. Navigate to the **Settings** tab on the web dashboard.
 7. Generate your **API Key** and **Session Key**.
 
-<img width="590" height="290" alt="Gen API" src="https://github.com/user-attachments/assets/568af3ed-1f60-426e-b980-f3ad532d7f60" />
+   <img width="590" height="290" alt="Gen API" src="https://github.com/user-attachments/assets/568af3ed-1f60-426e-b980-f3ad532d7f60" />
 
 9. Copy and paste both keys into the running Python application settings screen and click **Save** for each.
    <img width="2615" height="1500" alt="Save keys" src="https://github.com/user-attachments/assets/a4031b3f-5127-4d87-a562-7fd255f9ea04" />
    
 10. **Sync Local App:** Now the Python app will pull saved cloud records.
-<img width="2577" height="552" alt="Activated" src="https://github.com/user-attachments/assets/434ce6ab-3abe-4a30-8175-448675f4506a" />
+   <img width="2577" height="552" alt="Activated" src="https://github.com/user-attachments/assets/434ce6ab-3abe-4a30-8175-448675f4506a" />
 
 
 ---
