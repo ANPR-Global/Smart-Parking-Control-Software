@@ -71,7 +71,8 @@ To link your local environment to the cloud pipeline and unlock allowance tiers:
 3. **Vehicles:** Go to the **Vehicles** tab to map license plate numbers to tenants and set permitted parkings.
 4. **Sync Local App:** Click **Save / Sync** inside the local Python App to pull cloud records.
 
-### 4. Camera & Gate Hardware Setup
+### 4. Camera & Gate Hardware Setup (Python<img width="1915" height="915" alt="Dashboard" src="https://github.com/user-attachments/assets/0d751901-6304-4577-8902-9628f46aabb9" />
+)
 
 | Device Type | Supported Protocols |
 | --- | --- |
